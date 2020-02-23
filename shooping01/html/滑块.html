@@ -1,0 +1,62 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>slider</title>
+    <link rel="stylesheet" href="../滑块/jslider.css" type="text/css">
+    <!-- <link rel="stylesheet" href="jslider.blue.css" type="text/css"> -->
+    <!--滚动条样式-->
+    <link rel="stylesheet" href="../滑块/jslider.plastic.css" type="text/css">
+    <!-- <link rel="stylesheet" href="jslider.round.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="jslider.round.plastic.css" type="text/css"> -->
+
+    <script type="text/javascript" src="../滑块/jquery.js"></script>
+    <script type="text/javascript" src="../滑块/jquery.dependClass.js"></script>
+    <script type="text/javascript" src="../滑块/jquery.slider-min.js"></script>
+    <style type="text/css" media="screen">
+        body { background: #EEF0F7; }
+        .layout { padding: 50px; font-family: Georgia, serif; }
+        .layout-slider { margin-bottom: 60px; width: 50%; }
+        .layout-slider-settings { font-size: 12px; padding-bottom: 10px; }
+        .layout-slider-settings pre { font-family: Courier; }
+    </style>
+</head>
+<body>
+<div style="margin-top: 100px;" class="layout">
+    <div class="layout-slider" style="width: 100%">
+        <span style="display: inline-block; width: 400px; padding: 0 5px;">
+            <input class="Slider1" type="slider" name="price" value="60;750" />
+        </span>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        jQuery(".Slider1").slider(
+            { from: 60, to: 750,
+                step: 1, smooth: true,
+                round: 0, dimension: "&nbsp;",
+                skin: "plastic" });
+
+
+        $(".jslider-pointer").mouseup(function(){
+            console.log($(".jslider-value")[0].innerText)
+            console.log($(".jslider-value")[1].innerText)
+        })
+
+        // $(document).ready(function(){
+        //     $(".jslider-pointer").mouseup(function () {
+        //         console.log(13)
+        //         console.log($(".jslider-value")[0].innerText)
+        //         console.log($(".jslider-value")[1].innerText)
+        //     })
+        //     // $(".layout-slider").on('mouseup','jslider-pointer',function () {
+        //     //     console.log(13)
+        //     //     console.log($(".jslider-value"))
+        //     // })
+        // })
+
+    </script>
+
+
+</div>
+</body>
+</html>
