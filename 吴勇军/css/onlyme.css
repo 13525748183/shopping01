@@ -1,0 +1,388 @@
+
+.one{
+    width: 1200px;
+    /* height: 745px; */
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+.one-lf{
+    width: 230px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.one-lf p{
+    border-bottom: 2px solid #ebebeb;
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: 700;
+    color: #333;
+    line-height: 38px;
+    padding-left: 11px;
+    padding-top: 16px
+}
+.one-lf a{
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding-left: 44px; 
+    color: #666;
+}
+.one-lf a:hover{
+    background-color: rgb(240, 219, 219)
+}
+.on{
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding-left: 44px;
+    color: #000;
+    background-color: rgb(240, 219, 219);
+    border-left:3px solid rgb(4, 4, 77);
+}
+.one-r{
+     width: 945px;
+     display: none;   
+     height: 745px;
+}
+.two-r{
+    width: 945px;
+    height: 850px;
+    display: none;
+}
+.ser-r{
+    width: 945px;
+    height: 450px;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+.four-r{
+    width: 945px;
+    height: 450px;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+.five-r{
+    width: 945px;
+    height: 450px;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+.six-r{
+    width: 945px;
+    height: 450px;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.wu-0 span{
+    width: 25%;
+    background-color: #f5f5f5;
+}
+
+.sern-r{
+    width: 945px;
+    height: 450px;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+.dou{
+    display: block;
+}
+
+
+
+
+
+.r-log{
+    width: 100%;
+    height: 18px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 16px
+}
+.r-two{
+    width: 896px;
+    height: 225px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 24px 25px 16px;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+
+.flipper,.front, .back{
+    width: 339px;
+    height: 212px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.flipper {
+    transition: 0.6s;
+    /*让转换的子元素保留3D转换*/
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    /*隐藏旋转的背面*/
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.r-t{
+    width: 363px;
+    height: 14px;
+    line-height: 14px;
+}
+.rt{
+    color: #333;
+    font-size: 14px;
+    /* font-weight: 500; */
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 8px
+}
+.rt-r{
+    color: #999;
+    float: right;
+    cursor: pointer;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 400
+}
+.r-y{
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 10px;
+}
+.r-u{
+    width: 363px;
+    border-top: 2px solid #ccc;
+    margin-top: 50px;
+    position: relative;
+}
+.dui{
+    display: inline-block; 
+    width: 20px;height: 20px;
+    background-color: rgb(60, 17, 139);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -11px;
+    left: 0;
+}
+.dui-0{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: right; 
+    background-color: rgb(196, 189, 189);
+    position: absolute;
+    top: -9px;
+    right: 0;
+}
+.rr-t{
+    width: 897px;
+    height: 52px;
+    /* line-height: 100px; */
+    margin-top: 12px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+.my-ing{
+    width: 945px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.my-0{
+    width: 50%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 14px;
+    padding: 14px 16px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fff;
+}
+.my-1{
+    width: 50%;
+    color: #333;
+    font-size: 14px;
+    /* font-weight: 400; */
+    cursor: pointer;
+    line-height: 14px;
+    padding: 14px 16px;
+    background-color: #f9f9f9;
+
+}
+
+
+.r-lop{
+    width: 100%;
+    height: 18px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 16px
+}
+.r-lop1{
+    width: 100%;
+    height: 18px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 16px;
+    /* background-color: #f9f9f9; */
+    
+}
+.heng div{
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+}
+.heng1{
+    background-color: #f9f9f9;
+}
+.heng1 div{
+    font-size: 14px;
+    height: 59px;
+    line-height: 59px;
+}
+.kong {
+    width: 178px;
+    padding-left: 15px;
+    color: blue;
+}
+.shou{
+    width: 118px;
+}
+.ji{
+    width: 202px;
+}
+.di{
+    width: 272px;
+}
+.r-lop2{
+    width: 100%;
+    height: 18px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 16px
+}
+
+
+
+
+
+
+
+.ding{
+    width: 580px;
+    height: 505px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -252px;
+    margin-left: -290px;
+    display: none;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.ding h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.san{
+    width: 496px;
+    height: 29px;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    display: flex;
+    color: #606266;
+    font-size: 14px;
+}
+.san div{
+    
+    text-align: left;
+    
+}
+#sanji{
+    display: flex;
+}
+#sanji select{
+    width: 155px;
+    height: 36px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/登录注册.css">
+    <!-- <link rel="stylesheet" href="./head.css"> -->
+</head>
+<body>
+    <div id="head"></div>
+    <div style="margin-top: 240px;" class="mini">
+    <div class="deng">
+        <span id="dian">短信登录/注册</span>
+        <span style="color: black; border-bottom: 2px solid black;" id="dian2">账号密码登录</span>
+    </div>
+    <div class="deng-p">
+        <p class="deng-1">新会员注册成功后，可获赠10元无门槛会员欢迎礼券及首单双倍积分！<br>*新会员欢迎礼券将在1-2日送达您的帐户</p>
+    <form class="formm" action="">
+       <span>手机号</span><br>
+       <input style="width: 400px;height: 36px;" type="text" placeholder="请输入手机号"><br>
+       <span>图形验证码</span><br>
+       <input style="width: 250px;height: 36px;float: left;" type="text" placeholder="请输入验证码"><img style="display: inline-block; width: 100px;height: 36px;margin-left: 10px;" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAIAAAC6iKlyAAACo0lEQVR42u2aPUpEMRDHH1jYeQEtPILwGkFQWAsPoK3aWXgBL+ANBAtLb2Fr4xlsBJu10yNoIDCEl2QymY/3sWb4N+K6+/jN7D8zE7vfFqNEZ/rub/0OQw20KO5W207/Nj0jgT45vPfyuOFHr2YdttUNBT7gXqUGWtlPit+VmSepm0O25biNkmQOur/+AR2sP2ON4Ceb6dG3p/1ASb6x4j9U1FF/zJDkE3FYl++PiDgVTaTsFZZ/KHmB80Bb1COOmIK7E1JGbCSXAHoOlgg6x7oTUub5NZKA891vr+WCTrLuiJSRwq996JutCxCegOWCjlmXQeNPoAu6aB0Wh0EtaGIOsqBHa+MkoOFX3l58Oyg/DCiga+t9Q0DHDTiYO1h87EUj1DsHtNFjqYNOzjtJ7tODxstZmIOXvTMvOWjK6ZccL+2413l0DrRuY+dxq4NOEg9x7/cPKmJTLoA2aqJD0GGlqwwsyeo2As0ZWNigVdo78JYBd60+2gI0cwSXgHa6Wr2C5IchEOeBjllrgQZzZ+yVSKCLo2P4jo51iFKikF1sMuzhUL6P5W/v6M5AeZki6FyxA3TJIM7DLVqTVvnvaKCJXaNw41GLm0F57qA/Vl9euPWrrJbofjIj0FqTIURIPD54k6BDh7Hro108P62TUth1jA86Ju7kD14nvKIday3QFKDlG5a5gS5+/YF4EnRY+KYVrQOa2HVYLJUobusKKtd1hEWnC1rk0UTWKsMhDhroIOCSL2CchAPHB+W2Av60NAQtn8JDQCFoxPLYY6ETmDgvkvR1ug4J69yxmzsxaq1j8jtD370AcR3QtaztFv/zuZml9NHFJQ//H2gmuWGZFjECujjsdMVLbvUrLl4fPQfEuEfHa94K0C20ooFuoBvoFoz4A7UBQn+4oEPCAAAAAElFTkSuQmCC" alt=""><span style="font-size: 14px;float: right;">刷新</span>
+       <span>验证码</span><br>
+       <input style="width: 250px;height: 36px;" type="text" placeholder="请输入验证码">
+       <button style="width: 140px;height: 39px;">获取验证码</button>
+       <button style="width: 400px;height: 34px;margin-top: 20px;background-color: blue;">登录</button>
+       <span>第三方登录</span>
+       <div class="biao">扣扣</div><div class="biao">微信</div>
+    </form>
+    </div>
+    <form class="formm-0" action="">
+       <span>账号</span><br>
+       <input style="width: 400px;height: 36px;" type="text" placeholder="请输入手机号"><br>
+       <span>密码</span><br>
+       <input style="width: 400px;height: 36px;" type="password" placeholder="请输入密码">
+       <button style="width: 400px;height: 34px;margin-top: 20px;background-color: blue;">登录</button>
+       <span>第三方登录</span>
+       <div class="biao">扣扣</div><div class="biao">微信</div>
+    </form>
+</div>
+
+<div id="footer"></div>
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<!-- <script src="./登录注册.js"></script> -->
+<script>
+    $('#head').load('head.html')
+    $('#footer').load('footer.html')
+</script>
+<script>
+   let dian = document.getElementById("dian")
+   let dian2 = document.getElementById("dian2")
+   let dengp = document.getElementsByClassName("deng-p")
+   let formm = document.getElementsByClassName("formm-0")
+
+   dian2.onclick = function(){
+       dengp[0].style.display = "none"
+       formm[0].style.display = 'block'
+       dian2.style.color = 'black'
+       dian2.style.borderBottom = '2px solid black'
+       dian.style = ''
+   }
+   dian.onclick = function(){
+       dengp[0].style.display = "block"
+       formm[0].style.display = 'none'
+       dian.style.color = 'black'
+       dian.style.borderBottom = '2px solid black'
+       dian2.style = ''
+   }
+</script>
+
+</html>
